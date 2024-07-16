@@ -1,0 +1,161 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: Arial;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body{
+  font-family: Arial !important;
+}
+.navbar{
+    padding: 15px !important;
+    border-bottom: 2px black solid;
+  }
+ 
+  a{
+    color: black !important;
+    text-decoration: none !important;
+    font-size: 1.2rem;
+  }
+  ul a{
+    margin-top: 15px;
+  }
+   .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   }
+   .btn{
+      background-color: green !important;
+      color: white !important;
+      display: flex;
+      justify-content: center !important;
+      align-items: center !important;
+      gap: 5px !important;
+   }
+   .hamburger{
+    width: 3rem;
+    height: 3rem;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    flex-direction: column !important;
+    cursor: pointer;
+    display: block;
+   }
+   .line{
+    width: 90%;
+    height: 3px;
+    background-color: black;
+    border-radius: 40px;
+   }
+   ul{
+    display: none;
+   }
+   .register{
+    display: none;
+   }
+   .btn{
+    display: none !important;
+   }
+   h3{
+    font-size: 1.5rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+   }
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .btn{
+    display: block !important;
+  }
+  .hamburger{
+    display: none !important;
+  }
+   .register{
+    border: 2px black solid;
+    padding: 8px;
+    border-radius: 30px;
+    display: block;
+   }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  ul{
+    display: flex !important;
+    gap: 15px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: block;
+    margin-bottom: 10px !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
+
