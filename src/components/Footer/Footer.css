@@ -47,9 +47,31 @@ footer{
   background-color: black;
   color: white;
   padding: 30px 0 ;
-  border-radius: 40px;
+  border-radius: 20px 20px 0 0;
 }
-
+.flex{
+    display: flex;
+    flex-direction: column;
+     align-items: start;
+     justify-content: left;
+    margin-left: 30px;
+}
+.flex p{
+    width: 20rem;
+}
+.flex h2{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+}
+.second a{
+    color: white !important;
+}
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Bootstrap 4 breakpoints
@@ -62,12 +84,22 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 568px) { 
-     
-
+   .flex{
+    justify-content: space-between !important;
+   }  
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .flex{
+        flex-direction: row;
+       align-items: center;
+    justify-content: center !important;
+    justify-content: space-between !important;
+    margin-left: 80px !important;
+    padding: none;
+    } 
+}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {}
 

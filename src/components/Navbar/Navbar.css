@@ -49,6 +49,9 @@ body{
     padding: 15px !important;
     border-bottom: 2px black solid;
   }
+  body{
+    overflow-x: hidden;
+  }
  
   a{
     color: black !important;
@@ -82,12 +85,16 @@ body{
     flex-direction: column !important;
     cursor: pointer;
     display: block;
+    z-index: 2;
+    position: fixed;
+    right: 15px;
    }
    .line{
     width: 90%;
     height: 3px;
     background-color: black;
     border-radius: 40px;
+    transition: all ease 0.3s;
    }
    ul{
     display: none;
@@ -104,6 +111,50 @@ body{
     justify-content: center;
     align-items: center;
     gap: 3px;
+   }
+   .close .line1{
+    rotate: 45deg;
+    transform: translateX(16px);
+    margin-right: 20px;
+   }
+   .close .line2{
+    rotate: -45deg;
+    transform: translateX(16px);
+    margin-right: 20px;
+
+   }
+   .close .none{
+    display: none;
+   }
+   .phone-ul{
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    width: 0vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all ease 0.5s;
+   }
+   .phone-ul ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 30px;
+    margin-left: 20px;
+   }
+   .phone-ul h3{
+    margin-top: 30px;
+   }
+   .show .phone-ul{
+    width: 60vw;
+    overflow: visible;
+   }
+   .show  body{
+    background-color: rgba(0, 0, 0, 0.445) !important;
    }
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -122,6 +173,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+  .phone-ul{
+    display: none;
+  }
   .btn{
     display: block !important;
   }
