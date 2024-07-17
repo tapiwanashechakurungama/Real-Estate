@@ -44,8 +44,8 @@ table {
    
 .img{
   background-image: url(./stock-photo-real-estate-market-graph-up-arrow-house-model-and-a-stack-of-coins-the-concept-of-inflation-1929426920.jpg);
-  width: 100%;
-  height: 70vh;
+  width: 80%;
+  height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,6 +92,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 @media (min-width: 768px) {
     input{
         width: 20rem;
+    }
+    .img{
+        width: 100%;
+        height: 70vh;
     }
 }
 /* Large devices (desktops, 992px and up) */

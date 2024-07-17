@@ -75,9 +75,12 @@ body{
       align-items: center !important;
       gap: 5px !important;
    }
+   body{
+    overflow-x: hidden;
+   }
    .hamburger{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -85,9 +88,8 @@ body{
     flex-direction: column !important;
     cursor: pointer;
     display: block;
-    z-index: 2;
     position: fixed;
-    right: 15px;
+    right: 20px !important;
    }
    .line{
     width: 90%;
@@ -114,12 +116,12 @@ body{
    }
    .close .line1{
     rotate: 45deg;
-    transform: translateX(16px);
+    transform: translateX(12px);
     margin-right: 20px;
    }
    .close .line2{
     rotate: -45deg;
-    transform: translateX(16px);
+    transform: translateX(12px);
     margin-right: 20px;
 
    }
@@ -150,12 +152,34 @@ body{
     margin-top: 30px;
    }
    .show .phone-ul{
-    width: 60vw;
+    width: 100%;
     overflow: visible;
    }
    .show  body{
     background-color: rgba(0, 0, 0, 0.445) !important;
    }
+   .x{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+   }
+   .first-x{
+    rotate: 45deg;
+    transform: translateX(10.8px);
+   }
+   .second-x{
+    rotate: -45deg;
+    transform: translateX(10.8px);
+   }
+   
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Bootstrap 4 breakpoints
@@ -168,7 +192,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 568px) { 
-
+.show .phone-ul{
+  width: 60%;
+}
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */

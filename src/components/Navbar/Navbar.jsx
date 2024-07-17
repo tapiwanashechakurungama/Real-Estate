@@ -29,7 +29,6 @@ const Navbar = () => {
           className="hamburger"
           onClick={() => {
             const body = document.body;
-            event.target.classList.toggle("close");
             body.classList.toggle("show");
           }}
         >
@@ -49,6 +48,16 @@ const Navbar = () => {
             <a href="">Blog</a>
             <a href="">Pages</a>
           </ul>
+          <div
+            className="x"
+            onClick={() => {
+              const body = document.body;
+              body.classList.remove("show");
+            }}
+          >
+            <div className="line first-x"></div>
+            <div className="line second-x"></div>
+          </div>
         </div>
       </div>
     </nav>

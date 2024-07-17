@@ -26,7 +26,7 @@ const Body = () => {
         Home/ Rent <MdBedroomParent />
         <div className="display">
           <p>Showing 1 - 20 of the newest</p>
-          <p>Sorted by location</p>
+          <p>Sorted by location</p>;l
         </div>
         <div className="card1">
           {data.map((item) => (
